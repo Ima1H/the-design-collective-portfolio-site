@@ -120,7 +120,7 @@ html {
 
 /* alternating images in team */
 
-.flex-fip-alternate:nth-child(even) {
+.flex-flip-alternate:nth-child(even) {
     flex-direction: row-reverse;
 }
 
@@ -226,6 +226,10 @@ footer a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('/images/plant.jpg');
+}
+
+.landscape {
+    padding-bottom: 60%;
 }
 
 .bg-plant {

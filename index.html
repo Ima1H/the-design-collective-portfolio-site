@@ -86,7 +86,8 @@ layout: default
 <section class="bg-rust padded projects" id="projects">
     <h2 class="center"> Recent Projects </h2>
 
-    {% for project in site.projects limit: 2 %}
+    {% for project in site.projects limit: 2 %} 
+    <!-- we put a limit on the index page of our projects because when you have a lot of _projects you don't want them all on your index page -->
 
         <div class="grid flex-flip-alternate">
             
@@ -95,6 +96,7 @@ layout: default
                 <p> {{ project.description }}</p>
                 <a href="{{ project.live_url }}" class="button" target="_blank"> Go to site </a>
             </div>
+            
             <div class="col-7_sm-12-middle padded">
                 <img src="{{ project.featured_image }}" alt="{{ project.title }}">    
             </div>
@@ -104,3 +106,5 @@ layout: default
     {% endfor %}
 
 </section> 
+
+
