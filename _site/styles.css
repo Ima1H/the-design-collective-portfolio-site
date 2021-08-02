@@ -193,6 +193,11 @@ a:hover {
 }
 
 
+.emphasis {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
 /* Header & Footer  */
 
 header {
@@ -245,6 +250,11 @@ footer a:hover {
     border-radius: 100%;
 }
 
+.right-arrow {
+    max-width: 2rem;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+}
 
 /* Responsive video */
 

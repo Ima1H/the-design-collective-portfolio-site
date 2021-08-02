@@ -1,18 +1,19 @@
 --- 
-layout: default 
+layout: default
+banner_image: /images/plant.jpg 
 team: 
-- name: Hannah 
-  bio: Big boss developper 
+- name: Greg     
+  bio: Big boss coder 
   description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste accusamus sint reprehenderit soluta. 
-  profile_image: /images/profile-hannah.jpg 
-- name: Alisa 
+  profile_image: /images/profile-1.jpg 
+- name: Jane 
   bio: Big boss designer
   description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste accusamus sint reprehenderit soluta. 
-  profile_image: /images/profile-alisa.jpg 
-- name: Suzie 
-  bio: Developper/ part time model 
+  profile_image: /images/profile-3.jpg 
+- name: Johhny 
+  bio: Designer/part time model 
   description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste accusamus sint reprehenderit soluta. 
-  profile_image: /images/profile-suzie.jpg 
+  profile_image: /images/profile-2.jpg 
 ---
 
 <!-- Banner section -->
@@ -21,7 +22,7 @@ team:
         <h2> Meet our growing family. </h2>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?</p>
     </div>
-    <div class="col-7 bg-image bg-plant"> </div>
+    <div class="col-7 bg-image" style=" background-image: url('{{page.banner_image}}');"> </div>
 </section>
 
 <!-- Team members - only on about page so page varbiable -->
@@ -36,8 +37,8 @@ team:
             </div>
 
             <div class="col-7-middle padded-1">
-                <h3> Meet {{ person.name }} </h3>
-                <p> <strong> {{ person.bio }} </strong></p>
+                <h3> <strong>  Meet {{ person.name }}  </strong></h3>
+                <p> <strong> AKA '{{ person.bio }}' </strong></p>
                 <p> {{ person.description }} </p>
             </div>
 
@@ -47,8 +48,8 @@ team:
     </div>
 </section>
 
-<section class="padded bg-green">
-    <h2> Watch our corny meet the team video </h2>
-    <p> Featured j-bomb the terrier </p>
-    <div class='embed-container'><iframe src='https://www.youtube.com/embed/cFqZ_aOX5zA' frameborder='0' allowfullscreen></iframe></div>
+<section class="padded bg-green center">
+    <h2 class="editable"> Watch our corny meet the team video </h2>
+    <p class="emphasis editable"> Featured j-bomb the terrier </p>
+    <div class='embed-container'><iframe src='https://www.youtube.com/embed/85V97QcLGxQ' frameborder='0' allowfullscreen></iframe></div>
 </section>
